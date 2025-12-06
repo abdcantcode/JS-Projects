@@ -20,6 +20,8 @@ button{
   border-radius: 10px;
   border: 2px solid white;
   cursor: pointer;
+  position: relative;
+  z-index: 3;
 }
 button:active{
   scale:0.9;

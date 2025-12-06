@@ -45,11 +45,13 @@ button.addEventListener('click',function(){
   h1.style.rotate=rot+'deg';
   h1.innerHTML=''
   //random colored h1s
-  h1.style.backgroundColor=`rgb(${r},${g},${b})`;
+  h1.style.color=`rgb(${r},${g},${b})`;
 
   //choosing a random quote firstly index
+  let index=Math.floor(Math.random()*quotes.length);
+  h1.innerHTML=quotes[index];
 
   //actually adding the elements
-  main.appendChild();
+  main.appendChild(h1);
 
 })

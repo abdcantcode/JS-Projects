@@ -6,6 +6,7 @@
 html,body{
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 body{
   background-color: black;
@@ -25,4 +26,7 @@ button{
 }
 button:active{
   scale:0.9;
+}
+h1{
+  white-space: nowrap;
 }

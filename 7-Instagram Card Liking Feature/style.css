@@ -22,6 +22,9 @@ body{
   padding:30px;
   border-radius: 10px;
   text-align: center;
+  
+}
+.card div{
   position: relative;
 }
 img{
@@ -29,13 +32,23 @@ img{
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
+  
 }
-i{
+i {
   position: absolute;
-  top:50%;
-  left:50%;
-  color: white;
+  top: 50%;
+  left: 50%;
+  
   font-size: 50px;
-  transform: translate(-50%, -50%);
+  
+  background-image: url('./instagram-background-gradient-colors_23-2147819864.avif');
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
+  transform: translate(-50%, -50%) scale(0) rotate(-30deg);
+  opacity: 0;
+  transition: all ease 0.4s;
 }

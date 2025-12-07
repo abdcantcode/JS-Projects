@@ -1,4 +1,4 @@
-let arr=[
+let arr = [
   {
     "name": "Tony Sparx",
     "profession": "Dog Walker",
@@ -44,33 +44,36 @@ let arr=[
   {
     "name": "Nina Crisp",
     "profession": "Barista",
-    "image": "https://i.pravatar.cc/150?img=80",
+    "image": "https://i.pravatar.cc/150?img=15",
     "description": "Serves coffee with dramatic flair — latte art always looks like squirrels."
   },
   {
     "name": "Garry Pixel",
     "profession": "Software Tester",
-    "image": "https://i.pravatar.cc/150?img=90",
+    "image": "https://i.pravatar.cc/150?img=25",
     "description": "Finds bugs everywhere — even in cartoons and morning cereal bowls."
   },
   {
     "name": "Bella Frost",
     "profession": "Ice Sculptor",
-    "image": "https://i.pravatar.cc/150?img=100",
+    "image": "https://i.pravatar.cc/150?img=35",
     "description": "Sculpts penguins sipping tea — ice melts, penguins leave unimpressed."
   }
 ];
 
 
 
+let body=document.querySelector('body');
 
 sum='';
 arr.forEach(function(val){
   sum=sum+`<div class="card">
-    <img src="val[image]" alt="">
-    <h3>val.name</h3>
-    <h4>val.image</h4>
-    <p>val.description</p>
+    <img src="${val.image}" alt="">
+    <h3>${val.name}</h3>
+    <h4>${val.profession}</h4>
+    <p>${val.description}</p>
   </div>
   `;
+  
 })
+body.innerHTML=sum;

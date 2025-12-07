@@ -19,13 +19,14 @@ body{
   
   width: 300px;
   background-color: white;
-  padding:30px;
+  padding:25px;
   border-radius: 10px;
   text-align: center;
   
 }
 .card div{
   position: relative;
+  overflow: hidden;
 }
 img{
   width: 100%;
@@ -39,7 +40,7 @@ i {
   top: 50%;
   left: 50%;
   
-  font-size: 50px;
+  font-size: 65px;
   
   background-image: url('./instagram-background-gradient-colors_23-2147819864.avif');
   background-size: cover;

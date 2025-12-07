@@ -43,7 +43,7 @@ button.addEventListener('click',function(){
   h1.style.top=x+'%';
   h1.style.left=y+'%';
   h1.style.rotate=rot+'deg';
-  h1.innerHTML=''
+  
   //random colored h1s
   h1.style.color=`rgb(${r},${g},${b})`;
 

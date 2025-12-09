@@ -78,3 +78,23 @@ section{
   color: white;
   font-weight: 500;
 }
+.side{
+  color:white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right:0;
+  bottom: 0;
+  gap:10px;
+  padding-right: 10px;
+  padding-bottom: 70px;
+}
+.side h4{
+  font-size: 20px;
+}
+.side .comment h6{
+  margin-left: 3px;
+}
+.side .shares h6{
+  margin-left: 4px;
+}

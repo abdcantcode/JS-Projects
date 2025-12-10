@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.pianokadabba{
+  height: 400px;
+  width: 800px;
+  background-color: white;
+
+  display: flex;
+  
+}
+#pianokedabbiyaan{
+  height: 400px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid black;
+  display:flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+}

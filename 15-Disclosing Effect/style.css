@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+:root{
+  --x:10px;
+  --y:20px;
+}
+body{
+  background-color: black;
+}
+#upparkadiv{
+  height:100px;
+  width:100px;
+  background: radial-gradient(10px at var(--x) var(--y), red, blue);
+}

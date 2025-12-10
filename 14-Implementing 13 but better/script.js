@@ -1,4 +1,4 @@
-const users = [
+const reels = [
   {
     isLiked: false,
     likeCount: 1245,
@@ -110,12 +110,13 @@ const users = [
     videoLink: "https://www.pexels.com/download/video/6865614/"
   }
 ];
-
 let allreels=document.querySelector('.all-reels');
+function addData(){
+  
 let sum='';
 
-users.forEach(function(elem){
-  sum=sum+`<div class="reel">
+reels.forEach(function(elem,idx){
+  sum=sum+`<div class="reel" >
           <video src="${elem.videoLink}" autoplay loop muted></video>
           <div class="bottom">
             <div class="prof">
@@ -130,8 +131,8 @@ users.forEach(function(elem){
             </div>
           </div>
           <div class="side">
-            <div class="heart">
-              <h4>${elem.isLiked?'<i class="ri-heart-fill"></i>':'<i class="ri-heart-line"></i>'}</i></h4>
+            <div class="heart" id=${idx}>
+              <h4>${elem.isLiked?'<i class="ri-heart-fill" ></i>':'<i class="ri-heart-line"></i>'}</i></h4>
               <h6>${elem.likeCount}</h6>
             </div>
             <div class="comment">
@@ -150,3 +151,10 @@ users.forEach(function(elem){
         </div>`;
 })
 allreels.innerHTML=sum;
+}
+addData();
+ 
+allreels.addEventListener('click',function(dets){
+  console.log(dets.target.id);
+
+})

@@ -12,10 +12,11 @@ html,body{
   --y:20px;
 }
 body{
-  background-color: black;
+  background-image: url("https://i.pinimg.com/736x/03/48/0a/03480ac3dc48b099ca8a78df2248f84e.jpg");
+  background-size: cover;
 }
 #upparkadiv{
-  height:100px;
-  width:100px;
-  background: radial-gradient(10px at var(--x) var(--y), red, blue);
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(150px at var(--x) var(--y), rgba(255, 255, 255, 0), black);
 }
